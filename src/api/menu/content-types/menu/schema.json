@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nameFood": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nameFood"
+    }
+  }
+}
